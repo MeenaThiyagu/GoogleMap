@@ -10,7 +10,7 @@ export class AppComponent {
   lat= 51.67;
   lng= 33.32;
 
-  onClickedEvent(event){
-    console.log(event);
-  }
+  // onClickedEvent(event){
+  //   console.log(event);
+  // }
 }
