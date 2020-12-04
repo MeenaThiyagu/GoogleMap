@@ -8,17 +8,17 @@ import { AppComponent } from './app.component';
 
 
 import { AddressSplitComponent } from './address-split/address-split.component';
+import { AutoAddressComponent } from './auto-address/auto-address.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddressSplitComponent
+    AddressSplitComponent,
+    AutoAddressComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,
-    
-    
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
