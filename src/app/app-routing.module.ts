@@ -4,7 +4,7 @@ import { AddressSplitComponent } from './address-split/address-split.component';
 import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
-  {path:'map', component:AddressSplitComponent}
+  
 ];
 
 @NgModule({

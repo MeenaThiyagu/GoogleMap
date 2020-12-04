@@ -9,8 +9,8 @@ export class AddressSplitComponent implements AfterViewInit {
   @ViewChild('mapContainer', {static: false}) gmap: ElementRef;
   map: google.maps.Map;
 
-  lat = 38.627003;
-  lng = -90.199402;
+  lat = 39.833851
+  lng = 	-74.871826
   coordinates = new google.maps.LatLng(this.lat, this.lng);
   geocoder = new google.maps.Geocoder();
 
@@ -21,7 +21,7 @@ export class AddressSplitComponent implements AfterViewInit {
 
   mapOptions: google.maps.MapOptions = {
     center: this.coordinates,
-    zoom: 8,
+    zoom: 6,
   };
 
 
@@ -61,7 +61,7 @@ geocodeLatLng(
       ) => {
         if (status === "OK") {
           if (results[0]) {
-            console.log(results[0]);
+            console.log("result is ",results[0]);
             this.address = results[0].formatted_address;
             this.address1 = results[0].formatted_address.split(",")[0]
             this.address2 = results[0].formatted_address.split(",")[1]

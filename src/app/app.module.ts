@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 
 
-import { AgmCoreModule } from '@agm/core';
+
 import { AddressSplitComponent } from './address-split/address-split.component';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { AddressSplitComponent } from './address-split/address-split.component';
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,
-    AgmCoreModule.forRoot({apiKey:'AIzaSyDB9HbdOZFsxjkiA3XaQdezE-Taj21pUQs'})
+    
     
   ],
   providers: [],
