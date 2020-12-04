@@ -17,6 +17,7 @@ export class AddressSplitComponent implements AfterViewInit {
   address: String = null
   address1: String = null
   address2: String = null
+  zip: String =null
   country: String = null
 
   mapOptions: google.maps.MapOptions = {
@@ -65,7 +66,8 @@ geocodeLatLng(
             this.address = results[0].formatted_address;
             this.address1 = results[0].formatted_address.split(",")[0]
             this.address2 = results[0].formatted_address.split(",")[1]
-            this.country = results[0].formatted_address.split(",")[2]
+            this.zip = results[0].formatted_address.split(",")[2]
+            this.country = results[0].formatted_address.split(",")[3]
           } else {
             window.alert("No results found");
           }
