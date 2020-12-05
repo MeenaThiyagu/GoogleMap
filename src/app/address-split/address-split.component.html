@@ -1,25 +1,41 @@
-<!-- <h1>{{ title }}</h1> -->
 
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
-<!-- <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onClickedEvent($event)"></agm-map> -->
-<!-- <script src="AIzaSyDB9HbdOZFsxjkiA3XaQdezE-Taj21pUQs" type="text/javascript"></script> -->
+
 <div #mapContainer id="map"></div>
-
-<h1>{{address}}</h1>
-<div>
-<label id="address1">Address 1 </label>
-<input type="text" [(ngModel)]="address1" name="address1"/>
-</div>
-<div>
-<label id="address1">Address 2 </label>
-<input type="text" [(ngModel)]="address2" name="address1"/>
-</div>
-<div>
-    <label id="address1">Zip </label>
-    <input type="text" [(ngModel)]="zip" name="address1"/>
-    </div>
-<div>
-<label id="address1">Country </label>
-<input type="text" [(ngModel)]="country" name="address1"/>
-</div>
+<table style="width: max-content;">
+    <h1 style="text-align: center">{{address}}</h1>
+    <h2>Further parsing with the address using Geocoding</h2>
+    <tr>
+        <div>
+            <strong style="font-size:20px;font-family:fantasy">The address is</strong>
+            
+            <td><label id="address1">Address 1 </label></td> 
+            <td style="border-radius: 1px;">
+                <input type="text" [(ngModel)]="address1" name="address1" id="address1"  />
+            </td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label id="address1">Address 2 </label>
+            <td style="border-radius: 1px;">
+                <input type="text" [(ngModel)]="address2" name="address2" id="address2"  />
+            </td>
+        </div>
+    </tr>
+    <tr>
+        <div class="form-group">
+            <td><label id="address1">Zip code </label></td> 
+            <td style="border-radius: 1px;">
+                <input type="text" [(ngModel)]="zip" name="zip" id="zip"  />
+            </td>
+        </div>
+    </tr>
+    <tr>
+        <div class="form-group">
+            <td><label id="address1">Country</label></td> 
+            <td style="border-radius: 1px;">
+                <input type="text" [(ngModel)]="country" name="country" id="country"  />
+            </td>
+        </div>
+    </tr>
+</table>
